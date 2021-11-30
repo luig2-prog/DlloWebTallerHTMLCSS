@@ -13,7 +13,7 @@
     <table>
       <tr>
         <td>
-          <input type="number" placeholder="máximo 10 números" maxlength="10" />
+          <input type="number" placeholder="máximo 10 números" maxlength="10" onKeyDown="if(this.value.length==10) return false;"/>
         </td>
         <td>
           <select name="">
@@ -31,7 +31,7 @@
         </td>
         <td>
           <label for="">Hora</label>
-          <input type="time" maxlength="200" />
+          <input type="time" maxlength="200" onKeyDown="if(this.value.length==200) return false;"/>
         </td>
       </tr>
       <tr>
@@ -40,6 +40,7 @@
             type="text"
             placeholder="máximo 40 carácteres"
             maxlength="40"
+            onKeyDown="if(this.value.length==40) return false;"
           />
         </td>
         <td>
@@ -47,6 +48,7 @@
             type="text"
             placeholder="máximo 40 carácteres"
             maxlength="40"
+            onKeyDown="if(this.value.length==40) return false;"
           />
         </td>
       </tr>
@@ -113,6 +115,7 @@
             maxlength="200"
             placeholder="Multilinea, máximo 200 caracteres, y tres filas"
             wrap="soft"
+            onKeyDown="if(this.value.length==200) return false;"
           ></textarea>
         </td>
       </tr>
