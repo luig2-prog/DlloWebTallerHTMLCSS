@@ -1,0 +1,60 @@
+form{
+  border: 2px solid rgb(4, 48, 145);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 20px;
+}
+h1{
+  text-align: center;
+}
+   label{
+    font-size: 14px;
+    display:inline-block;
+    width: 100%;
+    color:dimgrey;
+  }
+  
+  input:focus, select:focus {
+    outline: none !important;
+  
+    box-shadow: 0 0 4px #024791
+  }
+  
+select,  input[type=text],input[type=number], input[type=time], input[type=date], input[type=color], input[type=email]{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgb(151, 142, 142);
+    border-radius: 4px;
+    height: 40px;
+    margin-bottom: 6px;
+  }
+
+  button:hover{
+    background-color:rgb(14, 107, 168);
+  }
+  /*Para desactivar el spinner del input number*/
+  input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  textarea{
+    width: 100%;
+    resize: none;
+  }
+
+  table {
+    margin: 15px 0;
+    table-layout: fixed;
+    width: 100%;
+    border-radius: 20px;
+  }
+  html {
+    background: #ccc;
+  }
+  body {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 10px;
+  }

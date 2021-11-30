@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" type="text/css" href="./formulario.css" />
+  </head>
+  <body>
+    <h1>Formulario</h1>
+<form action="">
+    <table>
+      <tr>
+        <td>
+          <input type="number" placeholder="máximo 10 números" maxlength="10" />
+        </td>
+        <td>
+          <select name="">
+            <option value="seleccione">SELECCIONE</option>
+            <option>Opción 1</option>
+            <option>Opción 2</option>
+            <option>Opción 3</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="">Fecha</label>
+          <input type="date" id="input1" />
+        </td>
+        <td>
+          <label for="">Hora</label>
+          <input type="time" maxlength="200" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input
+            type="text"
+            placeholder="máximo 40 carácteres"
+            maxlength="40"
+          />
+        </td>
+        <td>
+          <input
+            type="text"
+            placeholder="máximo 40 carácteres"
+            maxlength="40"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="color" />
+        </td>
+        <td>
+          <input type="email" placeholder="email" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="">selección múltiple</label>
+          <select multiple>
+            <option>uno</option>
+            <option>Dos</option>
+            <option>Tres</option>
+            <option>Cuatro</option>
+          </select>
+        </td>
+        <td>
+          <label for="numeros">Sugerencia</label>
+          <input
+            list="numeros"
+            name="numeros"
+            type="text"
+            placeholder="escriba un número"
+          />
+          <datalist id="numeros">
+            <option value="Uno"></option>
+            <option value="Dos"></option>
+            <option value="Tres"></option>
+            <option value="Cuatro"></option>
+            <option value="Cinco"></option>
+            <option value="Seis"></option>
+            <option value="Siete"></option>
+            <option value="Ocho"></option>
+            <option value="Nueve"></option>
+            <option value="Diez"></option>
+          </datalist>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="">Seleccione</label>
+          <input type="checkbox" id="check" placeholder="seleccione" />
+        </td>
+        <td>
+          <label for="">Seleccione</label>
+          <input type="radio" name="igual" value="1" />1
+          <input type="radio" name="igual" value="1" />2
+          <input type="radio" name="igual" value="1" />3
+        </td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <td>
+          <textarea
+            name="textArea"
+            rows="3"
+            maxlength="200"
+            placeholder="Multilinea, máximo 200 caracteres, y tres filas"
+            wrap="soft"
+          ></textarea>
+        </td>
+      </tr>
+    </table>
+</form>
+  </body>
+</html>
